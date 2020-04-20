@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event: one
+  bet_type: MyString
+  position: MyString
+  odds: 1
+  line: 9.99
+  active: false
+
+two:
+  event: two
+  bet_type: MyString
+  position: MyString
+  odds: 1
+  line: 9.99
+  active: false
