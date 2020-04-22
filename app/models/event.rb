@@ -33,7 +33,7 @@ class Event < ApplicationRecord
       e.away_team_id = Team.find_by(lookup: row['Away Team']).id
       # e.start_time
       # e.end_time
-      e.game_id = row['game_id']
+      e.game_id = row[0] # parser for excel doesnt like first row by name
       e.status = "pending"
       e.save
       
