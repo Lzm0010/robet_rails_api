@@ -1,0 +1,696 @@
+﻿name,lookup,logo,city,state,league_id
+Atlanta Hawks,Atlanta,,Atlanta,Georgia,1
+Boston Celtics,Boston,,Boston,Massachusetts,1
+Brooklyn Nets,Brooklyn,,Brooklyn,New York,1
+Charlotte Hornets,Charlotte,,Charlotte,North Carolina,1
+Chicago Bulls,Chicago,,Chicago,Illinois,1
+Cleveland Cavaliers,Cleveland,,Cleveland,Ohio,1
+Dallas Mavericks,Dallas,,Dallas,Texas,1
+Denver Nuggets,Denver,,Denver,Colorado,1
+Detroit Pistons,Detroit,,Detroit,Michigan,1
+Golden State Warriors,Golden State,,Oakland,California,1
+Houston Rockets,Houston,,Houston,Texas,1
+Indiana Pacers,Indiana,,Indianapolis,Indiana,1
+LA Clippers,L.A. Clippers,,Los Angeles,California,1
+LA Lakers,L.A. Lakers,,Los Angeles,California,1
+Memphis Grizzlies,Memphis,,Memphis,Tennessee,1
+Miami Heat,Miami,,Miami,Florida,1
+Milwaukee Bucks,Milwaukee,,Milwaukee,Wisconsin,1
+Minnesota Timberwolves,Minnesota,,Minneapolis,Minnesota,1
+New Orleans Hornets,New Orleans,,New Orleans,Louisiana,1
+New York Knicks,New York,,New York,New York,1
+Oklahoma City Thunder,Oklahoma City,,Oklahoma City,Oklahoma,1
+Orlando Magic,Orlando,,Orlando,Florida,1
+Philadelphia Sixers,Philadelphia,,Philadelphia,Pennsylvania,1
+Phoenix Suns,Phoenix,,Phoenix,Arizona,1
+Portland Trail Blazers,Portland,,Portland,Oregon,1
+Sacramento Kings,Sacramento,,Sacramento,California,1
+San Antonio Spurs,San Antonio,,San Antonio,Texas,1
+Toronto Raptors,Toronto,,Toronto,,1
+Utah Jazz,Utah,,Salt Lake City,Utah,1
+Washington Wizards,Washington,,Washington DC,,1
+Arizona Cardinals,,,Phoenix,Arizona,3
+Atlanta Falcons,,,Atlanta,Georgia,3
+Baltimore Ravens,,,Baltimore,Maryland,3
+Buffalo Bills,,,Buffalo,New York,3
+Carolina Panthers,,,Charlotte,North Carolina,3
+Chicago Bears,,,Chicago,Illinois,3
+Cincinnati Bengals,,,Cincinnati,Ohio,3
+Cleveland Browns,,,Cleveland,Ohio,3
+Dallas Cowboys,,,Dallas,Texas,3
+Denver Broncos,,,Denver,Colorado,3
+Detroit Lions,,,Detroit,Michigan,3
+Green Bay Packers,,,Green Bay,Wisconsin,3
+Houston Texans,,,Houston,Texas,3
+Indianapolis Colts,,,Indianapolis,Indiana,3
+Jacksonville Jaguars,,,Jacksonville,Florida,3
+Kansas City Chiefs,,,Kansas City,Missouri,3
+Los Angeles Chargers,,,Los Angeles,California,3
+Los Angeles Rams,,,Los Angeles,California,3
+Miami Dolphins,,,Miami,Florida,3
+Minnesota Vikings,,,Minneapolis,Minnesota,3
+New England Patriots,,,Boston,Massachusetts,3
+New Orleans Saints,,,New Orleans,Louisiana,3
+New York Giants,,,New York,New York,3
+New York Jets,,,New York,New York,3
+Oakland Raiders,,,Oakland,California,3
+Philadelphia Eagles,,,Philadelphia,Pennsylvania,3
+Pittsburgh Steelers,,,Pittsburgh,Pennsylvania,3
+San Francisco 49ers,,,San Francisco,California,3
+Seattle Seahawks,,,Seattle,Washington,3
+Tampa Bay Buccaneers,,,Tampa Bay,Florida,3
+Tennessee Titans,,,Nashville,Tennessee,3
+Washington Redskins,,,Washington DC,,3
+Arizona Diamondbacks,ARI,,Phoenix,Arizona,5
+Atlanta Braves,ATL,,Atlanta,Georgia,5
+Baltimore Orioles,BAL,,Baltimore,Maryland,5
+Boston Red Sox,BOS,,Boston,Massachusetts,5
+Chicago White Sox,CWS,,Chicago,Illinois,5
+Chicago Cubs,CHC,,Chicago,Illinois,5
+Cincinnati Reds,CIN,,Cincinnati,Ohio,5
+Cleveland Indians,CLE,,Cleveland,Ohio,5
+Colorado Rockies,COL,,Denver,Colorado,5
+Detroit Tigers,DET,,Detroit,Michigan,5
+Houston Astros,HOU,,Houston,Texas,5
+Kansas City Royals,KC,,Kansas City,Missouri,5
+Los Angeles Angels,LAA,,Los Angeles,California,5
+Los Angeles Dodgers,LAD,,Los Angeles,California,5
+Miami Marlins,MIA,,Miami,Florida,5
+Milwaukee Brewers,MIL,,Milwaukee,Wisconsin,5
+Minnesota Twins,MIN,,Minneapolis,Minnesota,5
+New York Yankees,NYY,,New York,New York,5
+New York Mets,NYM,,New York,New York,5
+Oakland Athletics,OAK,,Oakland,California,5
+Philadelphia Phillies,PHI,,Philadelphia,Pennsylvania,5
+Pittsburgh Pirates,PIT,,Pittsburgh,Pennsylvania,5
+San Diego Padres,SD,,San Diego,California,5
+San Francisco Giants,SF,,San Francisco,California,5
+Seattle Mariners,SEA,,Seattle,Washington,5
+St. Louis Cardinals,STL,,St Louis,Missouri,5
+Tampa Bay Rays,TB,,Tampa Bay,Florida,5
+Texas Rangers,TEX,,Dallas,Texas,5
+Toronto Blue Jays,TOR,,Toronto,,5
+Washington Nationals,WSH,,Washington DC,,5
+Anaheim Ducks,,,Los Angeles,California,6
+Arizona Coyotes,,,Phoenix,Arizona,6
+Boston Bruins,,,Boston,Massachusetts,6
+Buffalo Sabres,,,Buffalo,New York,6
+Calgary Flames,,,Calgary,,6
+Carolina Hurricanes,,,Raleigh,North Carolina,6
+Chicago Blackhawks,,,Chicago,Illinois,6
+Colorado Avalanche,,,Denver,Colorado,6
+Columbus Blue Jackets,,,Columbus,Ohio,6
+Dallas Stars,,,Dallas,Texas,6
+Detroit Red Wings,,,Detroit,Michigan,6
+Edmonton Oilers,,,Edmonton,,6
+Florida Panthers,,,Miami,Florida,6
+Los Angeles Kings,,,Los Angeles,California,6
+Minnesota Wild,,,Minneapolis,Minnesota,6
+Montreal Canadiens,,,Montreal,,6
+Nashville Predators,,,Nashville,Tennessee,6
+New Jersey Devils,,,Newark,New Jersey,6
+New York Islanders,,,New York,New York,6
+New York Rangers,,,New York,New York,6
+Ottawa Senators,,,Ottawa,,6
+Philadelphia Flyers,,,Philadelphia,Pennsylvania,6
+Pittsburgh Penguins,,,Pittsburgh,Pennsylvania,6
+San Jose Sharks,,,San Jose,California,6
+St. Louis Blues,,,St Louis,Missouri,6
+Tampa Bay Lightning,,,Tampa Bay,Florida,6
+Toronto Maple Leafs,,,Toronto,,6
+Vancouver Canucks,,,Vancouver,,6
+Vegas Golden Knights,,,Las Vegas,Nevada,6
+Washington Capitals,,,Washington DC,,6
+Winnipeg Jets,,,Winnipeg,,6
+Air Force Falcons,,,,,4
+Akron Zips,,,,,4
+Alabama Crimson Tide,,,,,4
+UAB Blazers,,,,,4
+Appalachian State Mountaineers,,,,,4
+Arizona Wildcats,,,,,4
+Arizona State Sun Devils,,,,,4
+Arkansas Razorbacks,,,,,4
+Arkansas State Red Wolves,,,,,4
+Army Black Knights,,,,,4
+Auburn Tigers,,,,,4
+Ball State Cardinals,,,,,4
+Baylor Bears,,,,,4
+Boise State Broncos,,,,,4
+Boston College Eagles,,,,,4
+Bowling Green Falcons,,,,,4
+Buffalo Bulls,,,,,4
+BYU Cougars,,,,,4
+California Golden Bears,,,,,4
+UCLA Bruins,,,,,4
+UCF Knights,,,,,4
+Central Michigan Chippewas,,,,,4
+Charlotte 49ers,,,,,4
+Cincinnati Bearcats,,,,,4
+Clemson Tigers,,,,,4
+Coastal Carolina Chanticleers,,,,,4
+Colorado Buffaloes,,,,,4
+Colorado State Rams,,,,,4
+Connecticut Huskies,,,,,4
+Duke Blue Devils,,,,,4
+Eastern Michigan Eagles,,,,,4
+East Carolina Pirates,,,,,4
+FIU Panthers,,,,,4
+Florida Gators,,,,,4
+Florida Atlantic Owls,,,,,4
+Florida State Seminoles,,,,,4
+Fresno State Bulldogs,,,,,4
+Georgia Bulldogs,,,,,4
+Georgia Southern Eagles,,,,,4
+Georgia State Panthers,,,,,4
+Georgia Tech Yellow Jackets,,,,,4
+Hawai’i Rainbow Warriors,,,,,4
+Houston Cougars,,,,,4
+Illinois Fighting Illini,,,,,4
+Indiana Hoosiers,,,,,4
+Iowa Hawkeyes,,,,,4
+Iowa State Cyclones,,,,,4
+Kansas Jayhawks,,,,,4
+Kansas State Wildcats,,,,,4
+Kent State Golden Flashes,,,,,4
+Kentucky Wilcats,,,,,4
+LSU Tigers,,,,,4
+Louisiana Tech Bulldogs,,,,,4
+Louisiana-Lafayette Ragin’ Cajuns,,,,,4
+Louisiana-Monroe Warhawks,,,,,4
+Louisville Cardinals,,,,,4
+Marshall Thundering Herd,,,,,4
+Maryland Terrapins,,,,,4
+Massachusetts Minutemen,,,,,4
+Memphis Tigers,,,,,4
+Miami Hurricanes,,,,,4
+Miami (OH) RedHawks,,,,,4
+Michigan Wolverines,,,,,4
+Michigan State Spartans,,,,,4
+Middle Tennessee Blue Raiders,,,,,4
+Minnesota Golden Gophers,,,,,4
+Ole Miss Rebels,,,,,4
+Mississippi State Bulldogs,,,,,4
+Missouri Tigers,,,,,4
+Navy Midshipmen,,,,,4
+Nebraska Cornhuskers,,,,,4
+Nevada Wolf Pack,,,,,4
+UNLV Rebels,,,,,4
+New Mexico Lobos,,,,,4
+New Mexico State Aggies,,,,,4
+North Carolina Tar Heels,,,,,4
+NC State Wolfpack,,,,,4
+North Texas Mean Green,,,,,4
+NIU Huskies,,,,,4
+Northwestern Wildcats,,,,,4
+Notre Dame Fighting Irish,,,,,4
+Ohio Bobcats,,,,,4
+Ohio State Buckeyes,,,,,4
+Oklahoma Sooners,,,,,4
+Oklahoma State Cowboys,,,,,4
+Old Dominion Monarchs,,,,,4
+Oregon Ducks,,,,,4
+Oregon State Beavers,,,,,4
+Penn State Nittany Lions,,,,,4
+Pittsburgh Panthers,,,,,4
+Purdue Boilermakers,,,,,4
+Rice Owls,,,,,4
+Rutgers Scarlet Knights,,,,,4
+San Diego State Aztects,,,,,4
+San Jose State Spartans,,,,,4
+South Alabama Jaguars,,,,,4
+South Carolina Gamecocks,,,,,4
+South Florida Bulls,,,,,4
+USC Trojans,,,,,4
+SMU Mustangs,,,,,4
+Southern Miss Golden Eagles,,,,,4
+Stanford Cardinal,,,,,4
+Syracuse Orange,,,,,4
+TCU Horned Frogs,,,,,4
+Temple Owls,,,,,4
+Tennessee Volunteers,,,,,4
+Texas Longhorns,,,,,4
+Texas A&M Aggies,,,,,4
+Texas State Bobcats,,,,,4
+Texas Tech Red Raiders,,,,,4
+UTEP Miners,,,,,4
+UTSA Roadrunners,,,,,4
+Toledo Rockets,,,,,4
+Troy Trojans,,,,,4
+Tulane Green Wave,,,,,4
+Tulsa Golden Hurricane,,,,,4
+Utah Utes,,,,,4
+Utah State Aggies,,,,,4
+Vanderbilt Commodores,,,,,4
+Virginia Cavaliers,,,,,4
+Virginia Tech Hokies,,,,,4
+Wake Forest Demon Deacons,,,,,4
+Washington Huskies,,,,,4
+Washington State Cougars,,,,,4
+West Virginia Mountaineers,,,,,4
+Western Kentucky Hilltoppers,,,,,4
+Western Michigan Broncos,,,,,4
+Wisconsin Badgers,,,,,4
+Wyoming Cowboys,,,,,4
+Abilene Christian,,,,,2
+Air Force,,,,,2
+Akron,,,,,2
+Alabama,,,,,2
+Alabama A&M,,,,,2
+Alabama State,,,,,2
+Albany,,,,,2
+Alcorn State,,,,,2
+American University,,,,,2
+Appalachian State,,,,,2
+Arizona,,,,,2
+Arizona State,,,,,2
+Arkansas,,,,,2
+Arkansas-Little Rock,,,,,2
+Arkansas-Pine Bluff,,,,,2
+Arkansas State,,,,,2
+Army,,,,,2
+Auburn,,,,,2
+Austin Peay,,,,,2
+Ball State,,,,,2
+Baylor,,,,,2
+Belmont,,,,,2
+Bethune Cookman,,,,,2
+Binghamton,,,,,2
+Boise State,,,,,2
+Boston College,,,,,2
+Boston University,,,,,2
+Bowling Green,,,,,2
+Bradley,,,,,2
+Brown,,,,,2
+Bryant University,,,,,2
+Bucknell,,,,,2
+Buffalo,,,,,2
+Butler,,,,,2
+BYU,,,,,2
+Cal-Davis,,,,,2
+Cal-St. Bakersfield,,,,,2
+Cal-St. Fullerton,,,,,2
+Cal-St. Northridge,,,,,2
+California,,,,,2
+Cal Poly SLO,,,,,2
+Campbell,,,,,2
+Canisius,,,,,2
+Central Arkansas,,,,,2
+Central Connecticut State,,,,,2
+Central Florida,,,,,2
+Central Michigan,,,,,2
+Charleston Southern,,,,,2
+Charlotte,,,,,2
+Chicago State,,,,,2
+Cincinnati,,,,,2
+Clemson,,,,,2
+Cleveland State,,,,,2
+Coastal Carolina,,,,,2
+Colgate,,,,,2
+College of Charleston,,,,,2
+Colorado,,,,,2
+Colorado State,,,,,2
+Columbia,,,,,2
+Connecticut,,,,,2
+Coppin State,,,,,2
+Cornell,,,,,2
+Creighton,,,,,2
+Dartmouth,,,,,2
+Davidson,,,,,2
+Dayton,,,,,2
+Delaware,,,,,2
+Delaware State,,,,,2
+Denver,,,,,2
+DePaul,,,,,2
+Detroit,,,,,2
+Drake,,,,,2
+Drexel,,,,,2
+Duke,,,,,2
+Duquesne,,,,,2
+East Carolina,,,,,2
+Eastern Illinois,,,,,2
+Eastern Kentucky,,,,,2
+Eastern Michigan,,,,,2
+Eastern Washington,,,,,2
+East Tenn State,,,,,2
+Elon University,,,,,2
+Evansville,,,,,2
+Fairfield,,,,,2
+Fairleigh Dickinson,,,,,2
+Florida,,,,,2
+Florida A&M,,,,,2
+Florida Atlantic,,,,,2
+Florida Gulf Coast,,,,,2
+Florida International,,,,,2
+Florida State,,,,,2
+Fordham,,,,,2
+Fresno State,,,,,2
+Furman,,,,,2
+Gardner-Webb,,,,,2
+George Mason,,,,,2
+Georgetown,,,,,2
+George Washington,,,,,2
+Georgia,,,,,2
+Georgia State,,,,,2
+Georgia Tech,,,,,2
+Gonzaga,,,,,2
+Grambling,,,,,2
+Grand Canyon,,,,,2
+Hampton,,,,,2
+Hartford,,,,,2
+Harvard,,,,,2
+Hawaii,,,,,2
+High Point,,,,,2
+Hofstra,,,,,2
+Holy Cross,,,,,2
+Houston,,,,,2
+Houston Baptist,,,,,2
+Howard,,,,,2
+Idaho,,,,,2
+Idaho State,,,,,2
+Illinois,,,,,2
+Illinois-Chicago,,,,,2
+Illinois State,,,,,2
+Incarnate Word,,,,,2
+Indiana,,,,,2
+Indiana State,,,,,2
+Iona,,,,,2
+Iowa,,,,,2
+Iowa,,,,,2
+Iowa State,,,,,2
+IPFW,,,,,2
+IUPUI,,,,,2
+Jackson State,,,,,2
+Jacksonville,,,,,2
+Jacksonville State,,,,,2
+James Madison,,,,,2
+Kansas,,,,,2
+Kansas State,,,,,2
+Kennesaw State,,,,,2
+Kent State,,,,,2
+Kentucky,,,,,2
+Lafayette,,,,,2
+Lamar,,,,,2
+La Salle,,,,,2
+Lehigh,,,,,2
+Liberty,,,,,2
+Lipscomb,,,,,2
+Long Beach State,,,,,2
+Long Island University,,,,,2
+Longwood,,,,,2
+Louisiana-Lafayette,,,,,2
+Louisiana-Monroe,,,,,2
+Louisiana Tech,,,,,2
+Louisville,,,,,2
+Loyola-Chicago,,,,,2
+Loyola-Maryland,,,,,2
+Loyola-Marymount,,,,,2
+LSU,,,,,2
+Maine,,,,,2
+Manhattan,,,,,2
+Marist,,,,,2
+Marquette,,,,,2
+Marshall,,,,,2
+Maryland,,,,,2
+Maryland-Baltimore County,,,,,2
+Maryland-Eastern Shore,,,,,2
+Massachusetts,,,,,2
+McNeese State,,,,,2
+Memphis,,,,,2
+Mercer,,,,,2
+Miami (FL),,,,,2
+Miami (OH),,,,,2
+Michigan,,,,,2
+Michigan State,,,,,2
+Middle Tennessee State,,,,,2
+Minnesota,,,,,2
+Mississippi,,,,,2
+Mississippi State,,,,,2
+Mississippi Valley State,,,,,2
+Missouri,,,,,2
+Missouri-Kansas City,,,,,2
+Missouri State,,,,,2
+Monmouth,,,,,2
+Montana,,,,,2
+Montana State,,,,,2
+Morehead State,,,,,2
+Morgan State,,,,,2
+Mount St. Mary’s,,,,,2
+Murray State,,,,,2
+N.C. State,,,,,2
+Navy,,,,,2
+Nebraska,,,,,2
+Nebraska-Omaha,,,,,2
+New Hampshire,,,,,2
+New Mexico,,,,,2
+New Mexico State,,,,,2
+New Orleans,,,,,2
+Niagara,,,,,2
+Nicholls State,,,,,2
+Norfolk State,,,,,2
+North Carolina,,,,,2
+North Carolina A&T,,,,,2
+North Carolina Central,,,,,2
+North Dakota State,,,,,2
+Northeastern,,,,,2
+Northern Illinois,,,,,2
+Northern Iowa,,,,,2
+Northern Kentucky,,,,,2
+North Florida,,,,,2
+North Texas,,,,,2
+Northwestern,,,,,2
+Northwestern State,,,,,2
+Notre Dame,,,,,2
+Oakland,,,,,2
+Ohio State,,,,,2
+Ohio University,,,,,2
+Oklahoma,,,,,2
+Oklahoma State,,,,,2
+Old Dominion,,,,,2
+Oral Roberts,,,,,2
+Oregon,,,,,2
+Oregon State,,,,,2
+Pacific,,,,,2
+Penn State,,,,,2
+Pennsylvania,,,,,2
+Pepperdine,,,,,2
+Pittsburgh,,,,,2
+Portland,,,,,2
+Prairie View A&M,,,,,2
+Presbyterian College,,,,,2
+Princeton,,,,,2
+Providence,,,,,2
+Purdue,,,,,2
+Quinnipiac,,,,,2
+Radford,,,,,2
+Rhode Island,,,,,2
+Rice,,,,,2
+Richmond,,,,,2
+Rider,,,,,2
+Robert Morris,,,,,2
+Rutgers,,,,,2
+Sacramento State,,,,,2
+Sacred Heart,,,,,2
+Saint Louis,,,,,2
+Samford,,,,,2
+Sam Houston State,,,,,2
+San Diego,,,,,2
+San Diego State,,,,,2
+San Francisco,,,,,2
+San Jose State,,,,,2
+Santa Clara,,,,,2
+Savannah State,,,,,2
+Seattle,,,,,2
+SE Louisiana,,,,,2
+SE Missouri State,,,,,2
+Seton Hall,,,,,2
+Siena,,,,,2
+SMU,,,,,2
+South Alabama,,,,,2
+South Carolina,,,,,2
+South Carolina State,,,,,2
+South Dakota,,,,,2
+South Dakota State,,,,,2
+Southern Illinois,,,,,2
+Southern Illinois-Edwardsville,,,,,2
+Southern Mississippi,,,,,2
+Southern University,,,,,2
+Southern Utah,,,,,2
+South Florida,,,,,2
+St. Bonaventure,,,,,2
+St. Francis (NY),,,,,2
+St. Francis (PA),,,,,2
+St. John’s,,,,,2
+St. Joseph,,,,,2
+St. Mary’s,,,,,2
+St. Peter’s,,,,,2
+Stanford,,,,,2
+Stephen F. Austin,,,,,2
+Stetson,,,,,2
+Stony Brook,,,,,2
+Syracuse,,,,,2
+Temple,,,,,2
+Tennessee,,,,,2
+Tennessee State,,,,,2
+Tennessee Tech,,,,,2
+Texas,,,,,2
+Texas A&M,,,,,2
+Texas A&M Corpus Christi,,,,,2
+Texas Christian,,,,,2
+Texas Southern,,,,,2
+Texas State,,,,,2
+Texas Tech,,,,,2
+The Citadel,,,,,2
+Toledo,,,,,2
+Towson,,,,,2
+Troy,,,,,2
+Tulane,,,,,2
+Tulsa,,,,,2
+UAB,,,,,2
+UC-Irvine,,,,,2
+UC-Riverside,,,,,2
+UC-Santa Barbara,,,,,2
+UCLA,,,,,2
+UMass-Lowell,,,,,2
+UNC-Asheville,,,,,2
+UNC-Greensboro,,,,,2
+UNC-Wilmington,,,,,2
+UNLV,,,,,2
+USC,,,,,2
+USC-Upstate,,,,,2
+UT-Arlington,,,,,2
+UT-Chattanooga,,,,,2
+UT-Martin,,,,,2
+UT-Pan American,,,,,2
+UT-San Antonio,,,,,2
+Utah,,,,,2
+Utah State,,,,,2
+Utah Valley,,,,,2
+UTEP,,,,,2
+Valparaiso,,,,,2
+Vanderbilt,,,,,2
+VCU,,,,,2
+Vermont,,,,,2
+Villanova,,,,,2
+Virginia,,,,,2
+Virginia Tech,,,,,2
+VMI,,,,,2
+Wagner,,,,,2
+Wake Forest,,,,,2
+Washington,,,,,2
+Washington State,,,,,2
+Weber State,,,,,2
+Western Carolina,,,,,2
+Western Illinois,,,,,2
+Western Kentucky,,,,,2
+Western Michigan,,,,,2
+West Virginia,,,,,2
+Wichita State,,,,,2
+William & Mary,,,,,2
+Winthrop,,,,,2
+Wisconsin,,,,,2
+Wisconsin-Green Bay,,,,,2
+Wisconsin-Milwaukee,,,,,2
+Wofford,,,,,2
+Wright State,,,,,2
+Wyoming,,,,,2
+Xavier,,,,,2
+Yale,,,,,2
+Youngstown State,,,,,2
+FC Augsburg,,,,,9
+Hertha BSC,,,,,9
+Union Berlin,,,,,9
+Werder Bremen,,,,,9
+Borussia Dortmund,,,,,9
+Fortuna Dusseldorf,,,,,9
+Eintracht Frankfurt,,,,,9
+SC Freiburg,,,,,9
+1899 Hoffenheim,,,,,9
+1. FC Koln,,,,,9
+RB Leipzig,,,,,9
+Bayer Leverkusen,,,,,9
+Mainz 05,,,,,9
+Borussia Monchengladbach,,,,,9
+Bayern Munich,,,,,9
+SC Paderborn,,,,,9
+Schalke 04,,,,,9
+VfL Wolfsburg,,,,,9
+Arsenal,,,,,7
+Aston Villa,,,,,7
+Bournemouth,,,,,7
+Brighton & Hove Albion,,,,,7
+Burnley,,,,,7
+Chelsea,,,,,7
+Crystal Palace,,,,,7
+Everton,,,,,7
+Leicester City,,,,,7
+Liverpool,,,,,7
+Manchester City,,,,,7
+Manchester United,,,,,7
+Newcastle United,,,,,7
+Norwich City,,,,,7
+Sheffield United,,,,,7
+Southampton,,,,,7
+Tottenham Hotspur,,,,,7
+Watford,,,,,7
+West Ham United,,,,,7
+Wolverhampton Wanderers,,,,,7
+Alaves,,,,,8
+Athletic Bilbao,,,,,8
+Atletico Madrid,,,,,8
+Barcelona,,,,,8
+Celta Vigo,,,,,8
+Eibar,,,,,8
+Espanyol,,,,,8
+Getafe,,,,,8
+Granada,,,,,8
+Leganes,,,,,8
+Levante,,,,,8
+Mallorca,,,,,8
+Osasuna,,,,,8
+Real Betis,,,,,8
+Real Madrid,,,,,8
+Real Sociedad,,,,,8
+Sevilla,,,,,8
+Valencia,,,,,8
+Valladolid,,,,,8
+Villarreal,,,,,8
+Atalanta,,,,,10
+Benevento,,,,,10
+Bologna,,,,,10
+Cagliari,,,,,10
+Chievo,,,,,10
+Crotone,,,,,10
+Fiorentina,,,,,10
+Genoa,,,,,10
+Hellas Verona,,,,,10
+Internazionale,,,,,10
+Juventus,,,,,10
+Lazio,,,,,10
+Milan,,,,,10
+Napoli,,,,,10
+Roma,,,,,10
+Sampdoria,,,,,10
+Sassuolo,,,,,10
+SPAL,,,,,10
+Torino,,,,,10
+Udinese,,,,,10
+AS Monaco,,,,,11
+Angers,,,,,11
+Bordeaux,,,,,11
+Caen,,,,,11
+Dijon FCO,,,,,11
+Guingamp,,,,,11
+Lille,,,,,11
+Lyon,,,,,11
+Marseille,,,,,11
+Metz,,,,,11
+Montpellier,,,,,11
+Nantes,,,,,11
+Nice,,,,,11
+Paris Saint-Germain,,,,,11
+SC Amiens,,,,,11
+Saint-Etienne,,,,,11
+Stade Rennes,,,,,11
+Strasbourg,,,,,11
+Toulouse,,,,,11
+Troyes,,,,,11
