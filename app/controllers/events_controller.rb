@@ -5,7 +5,7 @@ class EventsController < ApplicationController
             :league => {:only => [:name]},
             :home_team => {:only => [:name, :logo, :city, :state]},
             :away_team => {:only => [:name, :logo, :city, :state]},
-            :bets => {:only => [:bet_type, :position, :odds, :line, :active]}
+            :bets => {:only => [:id, :bet_type, :position, :odds, :line, :active]}
         }, :except => [:created_at, :updated_at])
     end
 
