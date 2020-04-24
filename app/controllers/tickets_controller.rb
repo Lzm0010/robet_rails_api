@@ -2,7 +2,17 @@ class TicketsController < ApplicationController
     def create
         ticket = Ticket.new(ticket_params)
         if ticket.save
-          render json: ticket
+          render json: ticket.to_json(:include => {
+            :bet => {:only => [:bet_type, :position, :odds, :line, :active], :include => {
+              :event => {:include => {
+                :league => {:only => [:name]},
+                :home_team => {:only => [:name, :logo, :city, :state]},
+                :away_team => {:only => [:name, :logo, :city, :state]},
+                :bets => {:only => [:bet_type, :position, :odds, :line, :active]}
+              }}
+            }}
+  
+          })
         else
           render json: {"message": "Something went wrong. Ticket was not saved."}
         end
@@ -10,7 +20,17 @@ class TicketsController < ApplicationController
 
     def show
         ticket = Ticket.find(params[:id])
-        render json: ticket
+        render json: ticket.to_json(:include => {
+          :bet => {:only => [:bet_type, :position, :odds, :line, :active], :include => {
+            :event => {:include => {
+              :league => {:only => [:name]},
+              :home_team => {:only => [:name, :logo, :city, :state]},
+              :away_team => {:only => [:name, :logo, :city, :state]},
+              :bets => {:only => [:bet_type, :position, :odds, :line, :active]}
+            }}
+          }}
+
+        })
     end
     
     def update

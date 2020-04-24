@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :leagues, only: [:show]
   # resources :sports
   resources :users, only: [:create, :update, :show, :destroy]
+  get '/mybets', to: 'users#user_bets'
   post '/login', to: 'auth#create'
 end
