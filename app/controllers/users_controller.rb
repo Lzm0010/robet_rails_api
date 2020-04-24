@@ -4,10 +4,11 @@ class UsersController < ApplicationController
     def create
         user = User.create(user_params)
         if user.valid?
-          token = encode_token(user_id: user.id)
+          payload = {user_id: user.id}
+          token = encode_token(payload)
           render json: {user:user, jwt: token}
         else
-          render json: {error: "Failed to create user."}, status: :not_acceptable
+          render json: {errors: user.errors.full_messages}, status: :not_acceptable
         end
     end
 
