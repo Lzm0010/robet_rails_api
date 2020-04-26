@@ -5,6 +5,7 @@ class Event < ApplicationRecord
   has_many :bets
   has_many :tickets, through: :bets
   has_many :users, through: :bets
+  has_one :prediction
 
   #IDS
   #1 NBA ✅
@@ -31,7 +32,7 @@ class Event < ApplicationRecord
       e.league_id = league_id
       e.home_team_id = Team.find_by(lookup: row['Home Team']).id
       e.away_team_id = Team.find_by(lookup: row['Away Team']).id
-      # e.start_time
+      e.start_time = row['Date']
       # e.end_time
       e.game_id = row[0] # parser for excel doesnt like first row by name
       e.status = "pending"

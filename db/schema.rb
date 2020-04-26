@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_22_201859) do
+ActiveRecord::Schema.define(version: 2020_04_25_124502) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2020_04_22_201859) do
     t.boolean "active"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.decimal "prediction_delta"
     t.index ["event_id"], name: "index_bets_on_event_id"
   end
 
@@ -48,6 +49,17 @@ ActiveRecord::Schema.define(version: 2020_04_22_201859) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["sport_id"], name: "index_leagues_on_sport_id"
+  end
+
+  create_table "predictions", force: :cascade do |t|
+    t.bigint "event_id", null: false
+    t.decimal "home_score"
+    t.decimal "away_score"
+    t.decimal "home_confidence"
+    t.decimal "away_confidence"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["event_id"], name: "index_predictions_on_event_id"
   end
 
   create_table "sports", force: :cascade do |t|
@@ -90,6 +102,7 @@ ActiveRecord::Schema.define(version: 2020_04_22_201859) do
   add_foreign_key "bets", "events"
   add_foreign_key "events", "leagues"
   add_foreign_key "leagues", "sports"
+  add_foreign_key "predictions", "events"
   add_foreign_key "teams", "leagues"
   add_foreign_key "tickets", "bets"
   add_foreign_key "tickets", "users"

@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event: one
+  home_score: 9.99
+  away_score: 9.99
+  home_confidence: 9.99
+  away_confidence: 9.99
+
+two:
+  event: two
+  home_score: 9.99
+  away_score: 9.99
+  home_confidence: 9.99
+  away_confidence: 9.99
