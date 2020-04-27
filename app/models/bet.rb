@@ -4,6 +4,8 @@ class Bet < ApplicationRecord
   has_many :users, through: :tickets
   has_one :prediction, through: :event
 
+  ##### PREDICTION DELTA METHODS #####
+
   def get_prediction_delta
     case self.bet_type
     when "Moneyline"
@@ -45,17 +47,90 @@ class Bet < ApplicationRecord
     self.save
   end
 
+  
+  def self.get_all_prediction_deltas
+    Bet.all.each{|bet| bet.prediction_delta == nil ? bet.get_prediction_delta : nil}
+  end
+  
+  # method that checks for active bets and only runs active bets for below 
+  def self.sort_by_prediction_deltas
+    Bet.all.sort_by{|bet| bet.prediction_delta}.reverse!
+  end
+
+  ###### BET OUTCOME METHODS ######
+
+  def moneyline_outcome
+    if self.game_winner?
+      self.outcome = "Win"
+    else
+      self.outcome = "Loss"
+    end
+    self.save
+  end
+
+  def total_outcome
+    total_score = self.event.home_score + self.event.away_score
+    if self.position == "Over"
+      if total_score > self.line
+        self.outcome = "Win"
+      elsif total_score == self.line
+        self.outcome = "Push"
+      else
+        self.outcome = "Loss"
+      end
+    else
+      if total_score > self.line
+        self.outcome = "Loss"
+      elsif total_score == line
+        self.outcome = "Push"
+      else
+        self.outcome = "Win"
+      end
+    end
+    self.save
+  end
+
+  def spread_outcome
+    margin = (self.event.home_score - self.event.away_score).abs
+    spread = self.line.abs
+    if margin == spread
+      self.outcome = "Push"
+    elsif margin > spread
+      if self.game_winner?
+        self.outcome = "Win"
+      else
+        self.outcome = "Loss"
+      end
+    else
+      if self.is_favorite?
+        self.outcome = "Loss"
+      else
+        self.outcome = "Win"
+      end
+    end
+    self.save
+  end
+
+  def get_outcome
+    case self.bet_type
+    when "Moneyline"
+      self.moneyline_outcome
+    when "Total"
+      self.total_outcome
+    when "Spread" 
+      self.spread_outcome
+    end
+  end
+
+  ##### HELPER METHODS ######
+
   def is_favorite?
     bet_to_compare = Bet.where.not(id: self.id).find_by(event_id: self.event_id, bet_type: self.bet_type)
     self.line < bet_to_compare.line
   end
 
-  def self.get_all_prediction_deltas
-    Bet.all.each{|bet| bet.get_prediction_delta}
-  end
-
-  def self.sort_by_prediction_deltas
-    Bet.all.sort_by{|bet| bet.prediction_delta}.reverse!
+  def game_winner?
+    self.position == "Away" && self.event.away_score > self.event.home_score || self.position == "Home" && self.event.home_score > self.event.away_score
   end
 
 end

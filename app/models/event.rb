@@ -77,15 +77,18 @@ class Event < ApplicationRecord
 
   def self.get_results(date, league_id)
     league_name = League.find(league_id).name
-    csv_text = File.read(Rails.root.join('lib', 'seeds', "#{league_name}_Basic.csv"), 'rt')
+    csv_text = File.read(Rails.root.join('lib', 'seeds', "#{league_name}_Basic.csv"))
     csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
-    yesterdays_games = csv.select{|row| row['Date'] == date }
+    yesterdays_games = csv.select{|row| row['Date'] == date.to_s }
     yesterdays_games.each do |row|
-      e = Event.find_by(game_id: row['Game ID'].to_i)
+      e = Event.find_by(game_id: row[0])
       e.home_score = row['Home Score']
       e.away_score = row['Away Score']
       e.status = "finished"
       e.save
+      e.bets.each do |bet|
+        bet.get_outcome
+      end
       e.bets.update(active:false)
     end
   end

@@ -32,4 +32,24 @@ class Prediction < ApplicationRecord
     end
   end
 
+  def self.robet_record
+    {
+      "wins": self.robet_wins,
+      "losses": self.robet_losses,
+      "ties": self.robet_ties
+    }
+  end
+
+  def self.robet_wins
+    Prediction.joins(:bets).where("bets.prediction_delta > 0").where("bets.outcome" => "Win").count
+  end
+  
+  def self.robet_losses
+    Prediction.joins(:bets).where("bets.prediction_delta > 0").where("bets.outcome" => "Loss").count
+  end
+  
+  def self.robet_ties
+    Prediction.joins(:bets).where("bets.prediction_delta > 0").where("bets.outcome" => "Push").count
+  end
+
 end
