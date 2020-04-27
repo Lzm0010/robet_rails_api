@@ -52,9 +52,8 @@ class Bet < ApplicationRecord
     Bet.all.each{|bet| bet.prediction_delta == nil ? bet.get_prediction_delta : nil}
   end
   
-  # method that checks for active bets and only runs active bets for below 
   def self.sort_by_prediction_deltas
-    Bet.all.sort_by{|bet| bet.prediction_delta}.reverse!
+    Bet.where(active: true).sort_by{|bet| bet.prediction_delta}.reverse!
   end
 
   ###### BET OUTCOME METHODS ######

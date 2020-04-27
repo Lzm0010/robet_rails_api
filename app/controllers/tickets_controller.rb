@@ -18,25 +18,35 @@ class TicketsController < ApplicationController
         end
     end
 
-    def show
-        ticket = Ticket.find(params[:id])
-        render json: ticket.to_json(:include => {
-          :bet => {:only => [:bet_type, :position, :odds, :line, :active], :include => {
-            :event => {:include => {
-              :league => {:only => [:name]},
-              :home_team => {:only => [:name, :logo, :city, :state]},
-              :away_team => {:only => [:name, :logo, :city, :state]},
-              :bets => {:only => [:bet_type, :position, :odds, :line, :active]}
-            }}
-          }}
+    # def show
+    #     ticket = Ticket.find(params[:id])
+    #     render json: ticket.to_json(:include => {
+    #       :bet => {:only => [:bet_type, :position, :odds, :line, :active], :include => {
+    #         :event => {:include => {
+    #           :league => {:only => [:name]},
+    #           :home_team => {:only => [:name, :logo, :city, :state]},
+    #           :away_team => {:only => [:name, :logo, :city, :state]},
+    #           :bets => {:only => [:bet_type, :position, :odds, :line, :active]}
+    #         }}
+    #       }}
 
-        })
-    end
+    #     })
+    # end
     
     def update
         ticket = Ticket.find(params[:id])
         if ticket.update_attributes(ticket_params)
-          render json: ticket
+          render json: ticket.to_json(:include => {
+            :bet => {:only => [:bet_type, :position, :odds, :line, :active], :include => {
+              :event => {:include => {
+                :league => {:only => [:name]},
+                :home_team => {:only => [:name, :logo, :city, :state]},
+                :away_team => {:only => [:name, :logo, :city, :state]},
+                :bets => {:only => [:bet_type, :position, :odds, :line, :active]}
+              }}
+            }}
+  
+          })
         else
           render json: {"message": "Something went wrong. Update was not saved."}
         end

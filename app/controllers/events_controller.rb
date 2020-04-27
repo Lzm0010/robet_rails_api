@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
     def index
-        events = Event.all
+        events = Event.where(status: "pending")
         render json: events.to_json(:include => {
             :league => {:only => [:name]},
             :home_team => {:only => [:name, :logo, :city, :state]},
