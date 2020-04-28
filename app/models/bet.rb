@@ -121,6 +121,7 @@ class Bet < ApplicationRecord
     end
   end
 
+
   ##### HELPER METHODS ######
 
   def is_favorite?

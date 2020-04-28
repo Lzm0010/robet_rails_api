@@ -19,6 +19,15 @@ class User < ApplicationRecord
         }
     end
 
+    def sort_friends_by_win_percentage
+        self.followed_users.sort_by{|user| user.win_percentage}.reverse!
+    end
+
+    def win_percentage
+        total_games = self.wins + self.losses
+        self.wins / total_games
+    end
+
     def wins
         self.bets.where(outcome: "Win").count
     end

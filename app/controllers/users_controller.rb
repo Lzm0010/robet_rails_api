@@ -22,7 +22,7 @@ class UsersController < ApplicationController
     def user_bets
       render json: current_user.to_json(:include => {
         :bets => {:only => [:id, :bet_type, :position, :odds, :line, :active], :include => {
-          :tickets => {:only => [:id, :amount]},
+          :tickets => {:only => [:id, :amount, :user_id]},
           :event => {:only => [:home_score, :away_score],:include => {
             :league => {:only => [:name]},
             :home_team => {:only => [:name, :logo, :city, :state]},
@@ -34,7 +34,7 @@ class UsersController < ApplicationController
     end
 
     def my_friends
-      following = current_user.followed_users
+      following = current_user.sort_friends_by_win_percentage
       render json: following.to_json(:methods => :record)
     end
     
