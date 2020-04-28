@@ -3,7 +3,8 @@ class TicketsController < ApplicationController
         ticket = Ticket.new(ticket_params)
         if ticket.save
           render json: ticket.to_json(:include => {
-            :bet => {:only => [:bet_type, :position, :odds, :line, :active], :include => {
+            :bet => {:only => [:id, :bet_type, :position, :odds, :line, :active], :include => {
+              :tickets => {:only => [:id, :amount]},
               :event => {:include => {
                 :league => {:only => [:name]},
                 :home_team => {:only => [:name, :logo, :city, :state]},

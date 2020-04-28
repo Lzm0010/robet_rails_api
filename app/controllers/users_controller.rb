@@ -1,6 +1,13 @@
 class UsersController < ApplicationController
     skip_before_action :authorized, only: [:create]
 
+    def index
+      users = User.where.not(id: current_user.id)
+      render json: users.to_json(:include => {
+        :passive_relationships => {:only => [:id, :follower_id, :followed_id]}
+      })
+    end
+
     def create
         user = User.create(user_params)
         if user.valid?
@@ -24,6 +31,11 @@ class UsersController < ApplicationController
           }}
         }}
       }, :methods => :record)
+    end
+
+    def my_friends
+      following = current_user.followed_users
+      render json: following.to_json(:methods => :record)
     end
     
     def update
