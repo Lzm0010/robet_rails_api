@@ -32,11 +32,11 @@ class Prediction < ApplicationRecord
     end
   end
 
-  def self.robet_record
+  def robet_record
     {
-      "wins": self.robet_wins,
-      "losses": self.robet_losses,
-      "ties": self.robet_ties
+      "wins": Prediction.robet_wins,
+      "losses": Prediction.robet_losses,
+      "ties": Prediction.robet_ties
     }
   end
 

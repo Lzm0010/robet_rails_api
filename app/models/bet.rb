@@ -52,8 +52,12 @@ class Bet < ApplicationRecord
     Bet.all.each{|bet| bet.prediction_delta == nil ? bet.get_prediction_delta : nil}
   end
   
-  def self.sort_by_prediction_deltas
+  def self.sort_active_prediction_deltas
     Bet.where(active: true).sort_by{|bet| bet.prediction_delta}.reverse!
+  end
+
+  def self.sort_robets_prediction_deltas
+    Bet.where("prediction_delta > 0").sort_by{|bet| bet.prediction_delta}.reverse!
   end
 
   ###### BET OUTCOME METHODS ######

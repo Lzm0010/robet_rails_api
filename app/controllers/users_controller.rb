@@ -21,8 +21,8 @@ class UsersController < ApplicationController
 
     def user_bets
       render json: current_user.to_json(:include => {
-        :bets => {:only => [:id, :bet_type, :position, :odds, :line, :active], :include => {
-          :tickets => {:only => [:id, :amount, :user_id]},
+        :bets => {:only => [:id, :bet_type, :position, :odds, :line, :outcome], :include => {
+          :tickets => {:only => [:id, :amount, :user_id], :methods => :return},
           :event => {:only => [:home_score, :away_score],:include => {
             :league => {:only => [:name]},
             :home_team => {:only => [:name, :logo, :city, :state]},
