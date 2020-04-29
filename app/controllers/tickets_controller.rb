@@ -12,8 +12,7 @@ class TicketsController < ApplicationController
                 :bets => {:only => [:bet_type, :position, :odds, :line, :active]}
               }}
             }}
-  
-          })
+          }, :methods => :return)
         else
           render json: {"message": "Something went wrong. Ticket was not saved."}
         end
@@ -46,8 +45,7 @@ class TicketsController < ApplicationController
                 :bets => {:only => [:bet_type, :position, :odds, :line, :active]}
               }}
             }}
-  
-          })
+          }, :methods => :return)
         else
           render json: {"message": "Something went wrong. Update was not saved."}
         end
