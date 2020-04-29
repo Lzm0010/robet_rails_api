@@ -25,7 +25,7 @@ class User < ApplicationRecord
 
     def win_percentage
         total_games = self.wins + self.losses
-        self.wins / total_games
+        (self.wins).to_f / (total_games.nonzero? || 1).to_f
     end
 
     def wins
