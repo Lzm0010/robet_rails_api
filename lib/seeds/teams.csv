@@ -1,34 +1,34 @@
 ﻿name,lookup,logo,city,state,league_id
-Atlanta Hawks,Atlanta,,Atlanta,Georgia,1
-Boston Celtics,Boston,,Boston,Massachusetts,1
-Brooklyn Nets,Brooklyn,,Brooklyn,New York,1
-Charlotte Hornets,Charlotte,,Charlotte,North Carolina,1
-Chicago Bulls,Chicago,,Chicago,Illinois,1
-Cleveland Cavaliers,Cleveland,,Cleveland,Ohio,1
-Dallas Mavericks,Dallas,,Dallas,Texas,1
-Denver Nuggets,Denver,,Denver,Colorado,1
-Detroit Pistons,Detroit,,Detroit,Michigan,1
-Golden State Warriors,Golden State,,Oakland,California,1
-Houston Rockets,Houston,,Houston,Texas,1
-Indiana Pacers,Indiana,,Indianapolis,Indiana,1
-LA Clippers,L.A. Clippers,,Los Angeles,California,1
-LA Lakers,L.A. Lakers,,Los Angeles,California,1
-Memphis Grizzlies,Memphis,,Memphis,Tennessee,1
-Miami Heat,Miami,,Miami,Florida,1
-Milwaukee Bucks,Milwaukee,,Milwaukee,Wisconsin,1
-Minnesota Timberwolves,Minnesota,,Minneapolis,Minnesota,1
-New Orleans Hornets,New Orleans,,New Orleans,Louisiana,1
-New York Knicks,New York,,New York,New York,1
-Oklahoma City Thunder,Oklahoma City,,Oklahoma City,Oklahoma,1
-Orlando Magic,Orlando,,Orlando,Florida,1
-Philadelphia Sixers,Philadelphia,,Philadelphia,Pennsylvania,1
-Phoenix Suns,Phoenix,,Phoenix,Arizona,1
-Portland Trail Blazers,Portland,,Portland,Oregon,1
-Sacramento Kings,Sacramento,,Sacramento,California,1
-San Antonio Spurs,San Antonio,,San Antonio,Texas,1
-Toronto Raptors,Toronto,,Toronto,,1
-Utah Jazz,Utah,,Salt Lake City,Utah,1
-Washington Wizards,Washington,,Washington DC,,1
+Atlanta Hawks,Atlanta,atlanta_hawks.gif,Atlanta,Georgia,1
+Boston Celtics,Boston,boston_celtics.gif,Boston,Massachusetts,1
+Brooklyn Nets,Brooklyn,brooklyn_nets.gif,Brooklyn,New York,1
+Charlotte Hornets,Charlotte,charlotte_hornets.gif,Charlotte,North Carolina,1
+Chicago Bulls,Chicago,chicago_bulls.gif,Chicago,Illinois,1
+Cleveland Cavaliers,Cleveland,cleveland_cavaliers.gif,Cleveland,Ohio,1
+Dallas Mavericks,Dallas,dallas_mavericks.gif,Dallas,Texas,1
+Denver Nuggets,Denver,denver_nuggets.gif,Denver,Colorado,1
+Detroit Pistons,Detroit,detroit_pistons.gif,Detroit,Michigan,1
+Golden State Warriors,Golden State,golden_state_warriors.gif,Oakland,California,1
+Houston Rockets,Houston,houston_rockets.gif,Houston,Texas,1
+Indiana Pacers,Indiana,indiana_pacers.gif,Indianapolis,Indiana,1
+LA Clippers,L.A. Clippers,los_angeles_clippers.gif,Los Angeles,California,1
+LA Lakers,L.A. Lakers,los_angeles_lakers.gif,Los Angeles,California,1
+Memphis Grizzlies,Memphis,memphis_grizzlies.gif,Memphis,Tennessee,1
+Miami Heat,Miami,miami_heat.gif,Miami,Florida,1
+Milwaukee Bucks,Milwaukee,milwaukee_bucks.gif,Milwaukee,Wisconsin,1
+Minnesota Timberwolves,Minnesota,minnesota_timberwolves.gif,Minneapolis,Minnesota,1
+New Orleans Hornets,New Orleans,new_orleans_pelicans.gif,New Orleans,Louisiana,1
+New York Knicks,New York,new_york_knicks.gif,New York,New York,1
+Oklahoma City Thunder,Oklahoma City,oklahoma_city_thunder.gif,Oklahoma City,Oklahoma,1
+Orlando Magic,Orlando,orlando_magic.gif,Orlando,Florida,1
+Philadelphia Sixers,Philadelphia,philadelphia_76ers.gif,Philadelphia,Pennsylvania,1
+Phoenix Suns,Phoenix,phoenix_suns.gif,Phoenix,Arizona,1
+Portland Trail Blazers,Portland,portland_trail_blazers.gif,Portland,Oregon,1
+Sacramento Kings,Sacramento,sacramento_kings.gif,Sacramento,California,1
+San Antonio Spurs,San Antonio,san_antonio_spurs.gif,San Antonio,Texas,1
+Toronto Raptors,Toronto,toronto_raptors.gif,Toronto,,1
+Utah Jazz,Utah,utah_jazz.gif,Salt Lake City,Utah,1
+Washington Wizards,Washington,washington_wizards.gif,Washington DC,,1
 Arizona Cardinals,,,Phoenix,Arizona,3
 Atlanta Falcons,,,Atlanta,Georgia,3
 Baltimore Ravens,,,Baltimore,Maryland,3
@@ -61,36 +61,36 @@ Seattle Seahawks,,,Seattle,Washington,3
 Tampa Bay Buccaneers,,,Tampa Bay,Florida,3
 Tennessee Titans,,,Nashville,Tennessee,3
 Washington Redskins,,,Washington DC,,3
-Arizona Diamondbacks,ARI,,Phoenix,Arizona,5
-Atlanta Braves,ATL,,Atlanta,Georgia,5
-Baltimore Orioles,BAL,,Baltimore,Maryland,5
-Boston Red Sox,BOS,,Boston,Massachusetts,5
-Chicago White Sox,CWS,,Chicago,Illinois,5
-Chicago Cubs,CHC,,Chicago,Illinois,5
-Cincinnati Reds,CIN,,Cincinnati,Ohio,5
-Cleveland Indians,CLE,,Cleveland,Ohio,5
-Colorado Rockies,COL,,Denver,Colorado,5
-Detroit Tigers,DET,,Detroit,Michigan,5
-Houston Astros,HOU,,Houston,Texas,5
-Kansas City Royals,KC,,Kansas City,Missouri,5
-Los Angeles Angels,LAA,,Los Angeles,California,5
-Los Angeles Dodgers,LAD,,Los Angeles,California,5
-Miami Marlins,MIA,,Miami,Florida,5
-Milwaukee Brewers,MIL,,Milwaukee,Wisconsin,5
-Minnesota Twins,MIN,,Minneapolis,Minnesota,5
-New York Yankees,NYY,,New York,New York,5
-New York Mets,NYM,,New York,New York,5
-Oakland Athletics,OAK,,Oakland,California,5
-Philadelphia Phillies,PHI,,Philadelphia,Pennsylvania,5
-Pittsburgh Pirates,PIT,,Pittsburgh,Pennsylvania,5
-San Diego Padres,SD,,San Diego,California,5
-San Francisco Giants,SF,,San Francisco,California,5
-Seattle Mariners,SEA,,Seattle,Washington,5
-St. Louis Cardinals,STL,,St Louis,Missouri,5
-Tampa Bay Rays,TB,,Tampa Bay,Florida,5
-Texas Rangers,TEX,,Dallas,Texas,5
-Toronto Blue Jays,TOR,,Toronto,,5
-Washington Nationals,WSH,,Washington DC,,5
+Arizona Diamondbacks,ARI,arizona_diamondbacks.gif,Phoenix,Arizona,5
+Atlanta Braves,ATL,atlanta_braves.gif,Atlanta,Georgia,5
+Baltimore Orioles,BAL,baltimore_orioles.gif,Baltimore,Maryland,5
+Boston Red Sox,BOS,boston_red_sox.gif,Boston,Massachusetts,5
+Chicago White Sox,CWS,chicago_cubs.gif,Chicago,Illinois,5
+Chicago Cubs,CHC,chicago_white_sox.gif,Chicago,Illinois,5
+Cincinnati Reds,CIN,cincinnati_reds.gif,Cincinnati,Ohio,5
+Cleveland Indians,CLE,cleveland_indians.gif,Cleveland,Ohio,5
+Colorado Rockies,COL,colorado_rockies.gif,Denver,Colorado,5
+Detroit Tigers,DET,detroit_tigers.gif,Detroit,Michigan,5
+Houston Astros,HOU,houston_astros.gif,Houston,Texas,5
+Kansas City Royals,KC,kansas_city_royals.gif,Kansas City,Missouri,5
+Los Angeles Angels,LAA,los_angeles_angels.gif,Los Angeles,California,5
+Los Angeles Dodgers,LAD,los_angeles_dodgers.gif,Los Angeles,California,5
+Miami Marlins,MIA,miami_marlins.gif,Miami,Florida,5
+Milwaukee Brewers,MIL,milwaukee_brewers.gif,Milwaukee,Wisconsin,5
+Minnesota Twins,MIN,minnesota_twins.gif,Minneapolis,Minnesota,5
+New York Yankees,NYY,new_york_yankees.gif,New York,New York,5
+New York Mets,NYM,new_york_mets.gif,New York,New York,5
+Oakland Athletics,OAK,oakland_athletics.gif,Oakland,California,5
+Philadelphia Phillies,PHI,philadelphia_phillies.gif,Philadelphia,Pennsylvania,5
+Pittsburgh Pirates,PIT,pittsburgh_pirates.gif,Pittsburgh,Pennsylvania,5
+San Diego Padres,SD,san_diego_padres.gif,San Diego,California,5
+San Francisco Giants,SF,san_francisco_giants.gif,San Francisco,California,5
+Seattle Mariners,SEA,seattle_mariners.gif,Seattle,Washington,5
+St. Louis Cardinals,STL,st_louis_cardinals.gif,St Louis,Missouri,5
+Tampa Bay Rays,TB,tampa_bay_rays.gif,Tampa Bay,Florida,5
+Texas Rangers,TEX,texas_rangers.gif,Dallas,Texas,5
+Toronto Blue Jays,TOR,toronto_blue_jays.gif,Toronto,,5
+Washington Nationals,WSH,washington_nationals.gif,Washington DC,,5
 Anaheim Ducks,,,Los Angeles,California,6
 Arizona Coyotes,,,Phoenix,Arizona,6
 Boston Bruins,,,Boston,Massachusetts,6

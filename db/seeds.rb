@@ -31,7 +31,7 @@ csv.each do |row|
     t = Team.new
     t.name = row[0]
     t.lookup = row['lookup']
-    # t.logo = row['logo']
+    t.logo = row['logo']
     t.city = row['city']
     t.state = row['state']
     t.league_id = row['league_id']
@@ -43,12 +43,18 @@ puts "There are now #{Team.count} rows in the teams table. seed success!"
 ## SEED USERS
 u1 = User.create(username: "lee", 
     email: "email@gmail.com", 
-    password: "poo")
+    password: "poo",
+    balance: 0)
 u2 = User.create(username: "danny", 
     email: "haha@gmail.com", 
-    password: "poo")
+    password: "poo",
+    balance: 0
+)
 u3 = User.create(username: "frankie", 
     email: "a@g.com", 
-    password: "poo")
+    password: "poo",
+    balance: 0
+)
+
 
 
