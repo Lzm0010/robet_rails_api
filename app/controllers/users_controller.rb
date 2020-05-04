@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     def index
       users = User.where.not(id: current_user.id)
       render json: users.to_json(:include => {
-        :passive_relationships => {:only => [:id, :follower_id, :followed_id]}
+        :active_relationships => {:only => [:id, :follower_id, :followed_id]}
       })
     end
 
@@ -23,13 +23,14 @@ class UsersController < ApplicationController
       render json: current_user.to_json(:include => {
         :bets => {:only => [:id, :bet_type, :position, :odds, :line, :outcome], :include => {
           :tickets => {:only => [:id, :amount, :user_id], :methods => :return},
-          :event => {:only => [:home_score, :away_score, :status],:include => {
+          :event => {:only => [:home_score, :away_score, :status, :start_time], :include => {
             :league => {:only => [:name]},
             :home_team => {:only => [:name, :logo, :city, :state]},
             :away_team => {:only => [:name, :logo, :city, :state]},
             :bets => {:only => [:bet_type, :position, :odds, :line, :active]}
           }}
-        }}
+        }},
+        :active_relationships => {:only => [:id, :follower_id, :followed_id]}
       }, :methods => :record)
     end
 
@@ -44,7 +45,7 @@ class UsersController < ApplicationController
           render json: user.to_json(:include => {
             :bets => {:only => [:id, :bet_type, :position, :odds, :line, :outcome], :include => {
               :tickets => {:only => [:id, :amount, :user_id], :methods => :return},
-              :event => {:only => [:home_score, :away_score, :status],:include => {
+              :event => {:only => [:home_score, :away_score, :status, :start_time],:include => {
                 :league => {:only => [:name]},
                 :home_team => {:only => [:name, :logo, :city, :state]},
                 :away_team => {:only => [:name, :logo, :city, :state]},

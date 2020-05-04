@@ -21,7 +21,7 @@ class Event < ApplicationRecord
   #11 Ligue 1
 
   def self.get_todays_games(date, league_id)
-    #date should come in as YYYYMMDD zero padded
+    #date should come in as no strings, YYYYMMDD, zero padded
     league_name = League.find(league_id).name
     csv_text = File.read(Rails.root.join('lib', 'seeds', "#{league_name}_Basic.csv"))
     number_of_bets = league_id == 5 ? 4 : 6
