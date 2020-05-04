@@ -4,25 +4,15 @@ class Prediction < ApplicationRecord
 
   def self.get_todays_predictions(date, league_id)
     league_name = League.find(league_id).name
-    todays_games = Event.where(start_time: date)
-
+    todays_games = Event.where(start_time: date, league_id: league_id)
+    if todays_games.length == 0
+      return "No games today"
+    end
     todays_games.each do |game|
       p = Prediction.new
       p.event_id = game.id
-      away_team = Team.find(game.away_team_id).lookup
-      home_team = Team.find(game.home_team_id).lookup
-      if away_team == "WSH"
-        away_team = "WSN"
-      end
-      if away_team == "CWS"
-        away_team = "CHW"
-      end
-      if home_team == "WSH"
-        home_team = "WSN"
-      end
-      if home_team == "CWS"
-        home_team = "CHW"
-      end
+      away_team = Team.find(game.away_team_id).py_lookup
+      home_team = Team.find(game.home_team_id).py_lookup
       predictions = JSON.parse(ApiCaller.api_request("http://localhost:5000/#{league_name}/#{away_team}/#{home_team}"))
       p.home_score = predictions[home_team]['predicted_score'][0]
       p.home_confidence = predictions[home_team]['confidence']

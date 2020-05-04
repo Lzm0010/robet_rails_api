@@ -27,11 +27,14 @@ class Event < ApplicationRecord
     number_of_bets = league_id == 5 ? 4 : 6
     csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
     todays_games = csv.select{|row| row['Date'] == date.to_s}
+    if todays_games.length == 0 
+      return "No games today"
+    end
     todays_games.each do |row|
       e = Event.new
       e.league_id = league_id
-      e.home_team_id = Team.find_by(lookup: row['Home Team']).id
-      e.away_team_id = Team.find_by(lookup: row['Away Team']).id
+      e.home_team_id = Team.find_by(league_id: league_id, db_lookup: row['Home Team']).id
+      e.away_team_id = Team.find_by(league_id: league_id, db_lookup: row['Away Team']).id
       e.start_time = row['Date']
       # e.end_time
       e.game_id = row[0] # parser for excel doesnt like first row by name

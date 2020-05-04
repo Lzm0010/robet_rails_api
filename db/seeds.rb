@@ -30,7 +30,8 @@ csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 csv.each do |row|
     t = Team.new
     t.name = row[0]
-    t.lookup = row['lookup']
+    t.db_lookup = row['db_lookup']
+    t.py_lookup = row['py_lookup']
     t.logo = row['logo']
     t.city = row['city']
     t.state = row['state']
