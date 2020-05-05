@@ -2,7 +2,8 @@ class RelationshipsController < ApplicationController
   def create
     relationship = Relationship.new(relationship_params)
     if relationship.save
-      render json: relationship
+      friend = User.find(relationship.followed_id)
+      render json: friend.to_json(:methods => :record)
     else
       render json: {errors: relationship.errors.full_messages}, status: :not_acceptable
     end
@@ -13,7 +14,7 @@ class RelationshipsController < ApplicationController
     if relationship.follower_user == current_user
       relationship.destroy
     end
-    render json: relationship
+    render json: relationship.followed_user.to_json(:methods => :record)
   end
 
   private
