@@ -8,10 +8,14 @@ class Ticket < ApplicationRecord
 
   def return
     if self.bet.outcome == "Win"
-      if self.bet.odds > 0
-        profit = self.amount * (self.bet.odds / 100.00)
+      if self.bet.odds 
+        if self.bet.odds > 0
+          profit = self.amount * (self.bet.odds / 100.00)
+        else
+          profit = self.amount / (-self.bet.odds / 100.00)
+        end
       else
-        profit = self.amount / (-self.bet.odds / 100.00)
+        profit = self.amount
       end
     elsif self.bet.outcome == "Push"
       profit = 0

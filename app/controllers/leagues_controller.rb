@@ -1,4 +1,11 @@
 class LeaguesController < ApplicationController
+    def index
+        leagues = League.all
+        render json: leagues.to_json(:include => {
+            :teams => {:only => [:name, :py_lookup, :logo]}
+        }, :except => [:created_at, :updated_at])
+    end
+
     def show
         league = League.find(params[:id])
         render json: league.to_json(:include => {

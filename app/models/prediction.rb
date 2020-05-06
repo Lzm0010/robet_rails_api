@@ -30,6 +30,11 @@ class Prediction < ApplicationRecord
     }
   end
 
+  def win_percentage
+    total_games = Prediction.robet_wins + Prediction.robet_losses
+    (Prediction.robet_wins).to_f / (total_games.nonzero? || 1).to_f
+  end
+
   def self.robet_wins
     Prediction.joins(:bets).where("bets.prediction_delta > 0").where("bets.outcome" => "Win").count
   end
