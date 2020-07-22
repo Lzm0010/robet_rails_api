@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
   resources :relationships, only: [:create, :destroy]
   resources :tickets, only: [:create, :update, :show, :destroy]
   resources :events, only: [:index, :show]

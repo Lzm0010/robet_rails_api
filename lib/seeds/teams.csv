@@ -49,7 +49,7 @@ Los Angeles Chargers,L.A. Chargers,SDG,los_angeles_chargers.gif,Los Angeles,Cali
 Los Angeles Rams,L.A. Rams,RAM,los_angeles_rams.gif,Los Angeles,California,3
 Miami Dolphins,Miami,MIA,miami_dolphins.gif,Miami,Florida,3
 Minnesota Vikings,Minnesota,MIN,minnesota_vikings.gif,Minneapolis,Minnesota,3
-New England Patriots,New England,NEW,new_england_patriots.gif,Boston,Massachusetts,3
+New England Patriots,New England,NWE,new_england_patriots.gif,Boston,Massachusetts,3
 New Orleans Saints,New Orleans,NOR,new_orleans_saints.gif,New Orleans,Louisiana,3
 New York Giants,N.Y. Giants,NYG,new_york_giants.gif,New York,New York,3
 New York Jets,N.Y. Jets,NYJ,new_york_jets.gif,New York,New York,3
@@ -65,8 +65,8 @@ Arizona Diamondbacks,ARI,ARI,arizona_diamondbacks.gif,Phoenix,Arizona,5
 Atlanta Braves,ATL,ATL,atlanta_braves.gif,Atlanta,Georgia,5
 Baltimore Orioles,BAL,BAL,baltimore_orioles.gif,Baltimore,Maryland,5
 Boston Red Sox,BOS,BOS,boston_red_sox.gif,Boston,Massachusetts,5
-Chicago White Sox,CWS,CHW,chicago_cubs.gif,Chicago,Illinois,5
-Chicago Cubs,CHC,CHC,chicago_white_sox.gif,Chicago,Illinois,5
+Chicago White Sox,CWS,CHW,chicago_white_sox.gif,Chicago,Illinois,5
+Chicago Cubs,CHC,CHC,chicago_cubs.gif,Chicago,Illinois,5
 Cincinnati Reds,CIN,CIN,cincinnati_reds.gif,Cincinnati,Ohio,5
 Cleveland Indians,CLE,CLE,cleveland_indians.gif,Cleveland,Ohio,5
 Colorado Rockies,COL,COL,colorado_rockies.gif,Denver,Colorado,5
