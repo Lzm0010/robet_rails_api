@@ -14,7 +14,7 @@ class Prediction < ApplicationRecord
       p.event_id = game.id
       away_team = Team.find(game.away_team_id).py_lookup
       home_team = Team.find(game.home_team_id).py_lookup
-      predictions = JSON.parse(ApiCaller.api_request("http://localhost:5000/#{league_name}/#{away_team}/#{home_team}"))
+      predictions = JSON.parse(ApiCaller.api_request("https://serene-scrubland-52908.herokuapp.com/#{league_name}/#{away_team}/#{home_team}"))
       p.home_score = predictions[home_team]['predicted_score'][0]
       p.home_confidence = predictions[home_team]['confidence']
       p.away_score = predictions[away_team]['predicted_score'][0]
