@@ -50,7 +50,7 @@ class Event < ApplicationRecord
         )
 
         line = event["line_periods"]["1"]["period_full_game"]
-        if line = nil
+        if line == nil
             line = event["line_periods"]["2"]["period_full_game"]
         end
     
