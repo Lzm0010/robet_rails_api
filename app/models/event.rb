@@ -49,10 +49,7 @@ class Event < ApplicationRecord
             api_id: event["score"]["event_id"]
         )
 
-        line = event["line_periods"]["1"]["period_full_game"]
-        if line == nil
-            line = event["line_periods"]["2"]["period_full_game"]
-        end
+        line = event["line_periods"]["1"]["period_full_game"] || event["line_periods"]["2"]["period_full_game"]
     
         Bet.create(
             event_id: e.id,
