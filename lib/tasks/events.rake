@@ -2,8 +2,8 @@ namespace :events do
     desc "Rake task to get todays event and set the results of yesterdays events"
     task set_up_today: :environment do
         puts "Getting Yesterday's results and Today's games MLB..."
-        Event.get_results(20190907, 5)
-        Event.get_todays_games(20190908, 5)
+        Event.get_results("2020-07-23", 5)
+        Event.get_todays_games("2020-07-24", 5)
         Prediction.get_todays_predictions(20190908, 5)
         # puts "Getting Yesterday's results and Today's games NFL..."
         # Event.get_results(20190907, 3)

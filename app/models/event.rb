@@ -35,8 +35,8 @@ class Event < ApplicationRecord
         start_time = DateTime.strptime(time_given, "%Y-%m-%d")
         end_time = start_time + 3.hours
         if event["teams"]
-            away = event["teams"][0]["name"]
-            home = event["teams"][1]["name"]
+            away = event["teams"][0]["name"].strip
+            home = event["teams"][1]["name"].strip
         end
 
         e = Event.create_or_find_by(
@@ -160,7 +160,7 @@ class Event < ApplicationRecord
   #   end
   # end
 
-
+  ###date - "2020-07-23"
   def self.get_results(date, sport_id = 3)
     game_data = ApiCaller.external_api_request("https://therundown-therundown-v1.p.rapidapi.com/", ENV['RAPIHOST'], "sports/#{sport_id}/events/#{date}?include=scores&include=all_periods&offset=360")
     game_data["events"].each do |event|
