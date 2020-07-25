@@ -50,6 +50,9 @@ class Event < ApplicationRecord
         )
 
         line = event["line_periods"]["1"]["period_full_game"] || event["line_periods"]["2"]["period_full_game"]
+
+        p "LINE:::::::>" 
+        p line
     
         Bet.create(
             event_id: e.id,
@@ -160,7 +163,7 @@ class Event < ApplicationRecord
   #   end
   # end
 
-  ###date - "2020-07-23"
+  ###date - "2020-07-25"
   def self.get_results(date, sport_id = 3)
     game_data = ApiCaller.external_api_request("https://therundown-therundown-v1.p.rapidapi.com/", ENV['RAPIHOST'], "sports/#{sport_id}/events/#{date}?include=scores&include=all_periods&offset=360")
     game_data["events"].each do |event|
@@ -200,3 +203,9 @@ class Event < ApplicationRecord
 end
 
 # Game ID	Date	Away Team	Away Score	Away ML Open	Away ML Close	Over Open	Over Open Odds	Over Close	Over Close Odds	Home Team	Home Score	Home ML Open	Home ML Close	Under Open	Under Open Odds	Under Close	Under Close Odds
+# Bet.create(event_id:57, bet_type: "Moneyline", position:"Away", odds: 122, line:nil, active:true)
+# Bet.create(event_id:57, bet_type: "Moneyline", position:"Home", odds: -142, line:nil, active:true)
+# Bet.create(event_id:57, bet_type: "Spread", position:"Away", odds: -160, line:"1.5", active:true)
+# Bet.create(event_id:57, bet_type: "Spread", position:"Home", odds: 140, line:"-1.5", active:true)
+# Bet.create(event_id:57, bet_type: "Total", position:"Over", odds: -120, line:"8.5", active:true)
+# Bet.create(event_id:57, bet_type: "Total", position:"Under", odds: 100, line:"8.5", active:true)
