@@ -54,7 +54,7 @@ class Event < ApplicationRecord
         elsif event["line_periods"]["2"]
             line = event["line_periods"]["2"]["period_full_game"]
         else
-            return "No game"
+            next
         end
     
         Bet.create(
