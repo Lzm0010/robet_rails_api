@@ -2,7 +2,7 @@ class Prediction < ApplicationRecord
   belongs_to :event
   has_many :bets, through: :event
 
-  ####date format - "2020-07-23"
+  ####date format - "2020-07-23", 5 for MLB
   def self.get_todays_predictions(date, league_id)
     league_name = League.find(league_id).name
     todays_games = Event.where(start_time: date, league_id: league_id)
